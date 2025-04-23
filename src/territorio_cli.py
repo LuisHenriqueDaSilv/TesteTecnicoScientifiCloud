@@ -26,14 +26,13 @@ class TerritorioCLI:
         self.__create_compare_subparser(subparsers)
 
         parse_args = self.parser.parse_args()
-        if parse_args:
+        if parse_args and parse_args.command:
             try:
-                if parse_args.command:
-                    command = parse_args.command.lower()
-                    if  command == "dimension":
-                        dimension(parse_args.id, parse_args.path_to_image)
-                    elif command == "compare":
-                        compare(parse_args.id1, parse_args.id2, parse_args.path_to_image)
+                command = parse_args.command.lower()
+                if  command == "dimension":
+                    dimension(parse_args.id, parse_args.path_to_image)
+                elif command == "compare":
+                    compare(parse_args.id1, parse_args.id2, parse_args.path_to_image)
             except Exception as e:
                 print(f"Argumento invalido: {e}")
         else: 
