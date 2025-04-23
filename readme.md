@@ -81,7 +81,10 @@ env\Scripts\activate.bat
 
 3) Gere o build da aplicação:
 ``` bash
+# No linux:
 pyinstaller -w -F src/main.py -n "territory" --console
+# No windows:
+python -m PyInstaller -w -F src/main.py -n "territory" --console
 ```
 </br>
 Caso tudo tenha ocorrido corretamete, deve ter sido criado o arquivo executavel dentro da pasta <strong>/dist/territory</strong>
