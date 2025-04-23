@@ -40,7 +40,6 @@ Retorna a dimensão (em km²) de um território brasileiro informado por ID ou n
 <strong>Uso:</strong>
 ```bash
 ./territory dimension {id} {caminho_para_o_grafico}
-#Você pode usar --id ou --name para identificar o território.
 ```
 
 #### compare
