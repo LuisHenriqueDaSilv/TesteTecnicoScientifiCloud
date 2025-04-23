@@ -71,7 +71,7 @@ python3 -m venv env # Cria o ambiente virtual
 # Para LINUX:
 source ./env/bin/activate
 # Para WINDOWS:
-env/bin/activate
+env\Scripts\activate.bat
 ```
 
 2) Utilizando o pip, instale as dependencias do projeto:
